@@ -11,37 +11,37 @@ on:
         description: "Build Kernel OnePlus 8 (OOS13.1)?"
         required: true
         type: boolean
-        default: true
+        default: false
       build_kernel_k20p_aosp_a15:
         description: "Build Kernel Redmi K20Pro (Soviet-Star-OSS)(Based-AOSP A15)?"
         required: true
         type: boolean
-        default: true
+        default: false
       build_kernel_mix2s_evox_a15:
         description: "Build Kernel Xiaomi Mix2s (EVOX-A15-Official)?"
         required: true
         type: boolean
-        default: true
+        default: false
       build_kernel_blackshark4_miui_a11:
         description: "Build Kernel Black Shark 4 (MIUI 12 A11)?"
         required: true
         type: boolean
-        default: true
+        default: false
       build_kernel_mi10s_aosp_a15:
         description: "Build Kernel Xiaomi 10S (Based-AOSP Android 15)?"
         required: true
         type: boolean
-        default: true
+        default: false
       build_kernel_op8_nameless15_a15:
         description: "Build Kernel OnePlus 8 (Nameless 15)?"
         required: true
         type: boolean
-        default: true
+        default: false
       build_kernel_s20_oneui5_a13:
         description: "Build Kernel Samsung S20 5G (OneUI 5.1) (Snapdragon Only)?"
         required: true
         type: boolean
-        default: true
+        default: false
       build_kernel_miatoll_kinesis_a15:
         description: "Build Kernel Miatoll (Kinesis A15)?"
         required: true
@@ -51,12 +51,12 @@ on:
         description: "Build Kernel MiPad 4 (Plus) (LineageOS A15)?"
         required: true
         type: boolean
-        default: true
+        default: false
       make_release:
         description: "Do you want to create a release?"
         required: true
         type: boolean
-        default: true
+        default: false
 
 jobs:
   build_kernel_op8_oos131_a13:
