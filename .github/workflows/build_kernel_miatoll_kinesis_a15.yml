@@ -522,9 +522,9 @@ jobs:
         if: env.SUSFS_ENABLE == 'true' && env.SUSFS_FIXED == 'true'
         run: |
           cd $GITHUB_WORKSPACE/device_kernel/
-          cp NonGKI_Kernel_Patches/[patch_folder]/[patch_file].patch ./
+          cp SukiSU_patch/4.14/ksu_hooks_4.14.patch ./
 
-          patch -p1 < [patch_file].patch || true
+          patch -p1 < ksu_hooks_4.14.patch || true
 
       - name: Updated SUSFS Version
         if: env.SUSFS_ENABLE == 'true' && env.SUSFS_UPDATE == 'true'
